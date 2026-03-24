@@ -15,7 +15,7 @@ class Student(Person):
         self.studentID = studentID
         #상속받고 재정의
     def printInfo(self):
-        print("{0}, {1}, {3}, {4})".format(self.name, self.phoneNumber, self.subject, self.studentID))
+        print("{0}, {1}, {2}, {3}".format(self.name, self.phoneNumber, self.subject, self.studentID))
 
 p = Person("전우치", "010-222-1234")
 s = Student("이순신", "010-111-1234", "컴공", "991122")
