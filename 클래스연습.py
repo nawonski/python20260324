@@ -8,7 +8,7 @@ class Person:
     def print(self):
         print("My name is {0}".format(self.name))
 
-#2)객체 생선
+#2)객체 생성
 p1 = Person()
 p2 = Person()
 
