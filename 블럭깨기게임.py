@@ -244,6 +244,7 @@ class Game:
     
     def draw_menu(self):
         """메뉴 화면"""
+        self.font = pygame.font.SysFont("malgungothic", 30)  # 윈도우: 맑은 고딕
         title = self.large_font.render("BLOCK BREAKER", True, CYAN)
         subtitle = self.font.render("SPACE 키를 눌러 게임 시작", True, WHITE)
         
@@ -271,6 +272,7 @@ class Game:
     
     def draw_game_over(self):
         """게임 오버 화면"""
+        self.font = pygame.font.SysFont("malgungothic", 30)  # 윈도우: 맑은 고딕
         game_over = self.large_font.render("GAME OVER", True, RED)
         score_text = self.font.render(f"최종 점수: {self.score}", True, WHITE)
         restart_text = self.font.render("SPACE 키를 눌러 다시 시작", True, WHITE)
@@ -285,6 +287,7 @@ class Game:
     
     def draw_win(self):
         """게임 승리 화면"""
+        self.font = pygame.font.SysFont("malgungothic", 30)  # 윈도우: 맑은 고딕
         win = self.large_font.render("YOU WIN!", True, GREEN)
         score_text = self.font.render(f"최종 점수: {self.score}", True, WHITE)
         restart_text = self.font.render("SPACE 키를 눌러 다시 시작", True, WHITE)
